@@ -7,6 +7,7 @@ import ForwardToInboxOutlinedIcon from "@mui/icons-material/ForwardToInboxOutlin
 import PushPinOutlinedIcon from "@mui/icons-material/PushPinOutlined";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 import Hearder2 from "../hearder2/Hearder2";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -37,7 +38,9 @@ const Header = () => {
           <div className="w-8 h-8 rounded-full mt-2 ml-2">
             <LogoutOutlinedIcon />
           </div>
-          <h3 className="font-bold">Login / Signup</h3>
+          <Link href={"/login"}>
+            <h3 className="font-bold">Login / Signup</h3>
+          </Link>
         </div>
       </div>
     </div>
